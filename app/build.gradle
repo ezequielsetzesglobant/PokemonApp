@@ -30,18 +30,29 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
+
+preBuild.dependsOn ktlint
 
 dependencies {
     implementation project(path: ':domain')
     implementation project(path: ':di')
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.6.0'
-    implementation 'androidx.appcompat:appcompat:1.3.1'
-    implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //Basics
+    implementation Dependencies.kotlin_stdlib
+    implementation Dependencies.core_ktx
+    implementation Dependencies.appcompat
+
+    //UI
+    implementation Dependencies.material
+    implementation Dependencies.constraintlayout
+
+    //Test
+    testImplementation Dependencies.junit
+    androidTestImplementation Dependencies.ext_junit
+    androidTestImplementation Dependencies.expresso_core
 }
