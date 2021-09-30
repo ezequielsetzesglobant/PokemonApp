@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -55,4 +56,30 @@ dependencies {
     testImplementation Dependencies.junit
     androidTestImplementation Dependencies.ext_junit
     androidTestImplementation Dependencies.expresso_core
+
+    //Koin
+    testImplementation Dependencies.koin_test
+    implementation Dependencies.koin_androidx_viewmodel
+
+    //Architecture components
+    implementation Dependencies.lifecycle_viewmodel_ktx
+    implementation Dependencies.lifecycle_livedata_ktx
+    implementation Dependencies.lifecycle_runtime_ktx
+
+    //Navigation
+    implementation Dependencies.navigation_fragment_ktx
+    implementation Dependencies.navigation_ui_ktx
+
+    //Coroutines
+    implementation Dependencies.kotlinx_coroutines_core
+    implementation Dependencies.kotlinx_coroutines_android
+    testImplementation Dependencies.kotlinx_coroutines_test
+
+    //Mockito
+    testImplementation Dependencies.mockito_kotlin
+    testImplementation Dependencies.mockito_core
+    testImplementation Dependencies.mockito_inline
+
+    //Rule
+    testImplementation Dependencies.core_testing
 }

@@ -1,7 +1,7 @@
 package com.example.pokemonapp.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.pokemonapp.R
 
 class MainActivity : AppCompatActivity() {
