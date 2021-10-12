@@ -41,7 +41,7 @@ class SplashScreenViewModelTest {
     }
 
     @Test
-    fun navigateToMainFragmentTest() {
+    fun `navigate to main fragment test`() {
         val liveDataUnderTest = viewModel.getLiveDataState().testObserver()
 
         runBlocking {

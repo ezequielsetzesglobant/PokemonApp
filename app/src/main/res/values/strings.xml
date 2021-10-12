@@ -4,7 +4,8 @@
     <string name="tab_layout_main_fragment_tab_name_type">Pokemon Types</string>
     <string name="tab_layout_main_fragment_tab_name_subtypes">Pokemon Subtypes</string>
     <string name="tab_layout_main_fragment_tab_name_supertypes">Pokemon Supertypes</string>
-    <string name="text_view_card_type_fragment_text">Types Fragment</string>
-    <string name="text_view_card_sub_type_fragment_text">Subtypes Fragment</string>
-    <string name="text_view_card_super_type_fragment_text">Supertypes Fragment</string>
+
+    <string name="text_view_item_recycler_view_card_type_fragment_text">Type information</string>
+
+    <string name="text_view_one_parameter">%1$s</string>
 </resources>

@@ -37,4 +37,12 @@ preBuild.dependsOn ktlint
 dependencies {
     implementation project(path: ':domain')
     implementation project(path: ':data')
+
+    //Koin
+    testImplementation Dependencies.koin_test
+    implementation Dependencies.koin_androidx_viewmodel
+
+    //Room
+    implementation Dependencies.room_runtime
+    annotationProcessor Dependencies.room_compiler
 }

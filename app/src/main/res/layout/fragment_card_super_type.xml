@@ -9,6 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="@string/text_view_card_super_type_fragment_text" />
+        android:text="@string/text_view_one_parameter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

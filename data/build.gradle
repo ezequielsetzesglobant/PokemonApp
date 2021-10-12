@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -15,6 +16,8 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+
+        buildConfigField "String", "API_KEY", "\"$project.pokemon_api_key\""
     }
 
     buildTypes {
@@ -36,4 +39,27 @@ preBuild.dependsOn ktlint
 
 dependencies {
     implementation project(path: ':domain')
+
+    //Koin
+    testImplementation Dependencies.koin_test
+    implementation Dependencies.koin_androidx_viewmodel
+
+    //Retrofit
+    implementation Dependencies.retrofit
+    implementation Dependencies.converter_gson
+    implementation Dependencies.gson
+    implementation Dependencies.okhttp
+
+    //Mockito
+    testImplementation Dependencies.mockito_kotlin
+    testImplementation Dependencies.mockito_core
+    testImplementation Dependencies.mockito_inline
+
+    //Rule
+    testImplementation Dependencies.core_testing
+
+    //Room
+    implementation Dependencies.room_runtime
+    kapt Dependencies.room_compiler
+    implementation Dependencies.room_ktx
 }
