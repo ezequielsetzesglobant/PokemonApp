@@ -35,6 +35,15 @@ object Versions {
 
     //Rule
     const val core_testing = "2.1.0"
+
+    //Retrofit
+    const val retrofit = "2.9.0"
+    const val converter_gson = "2.9.0"
+    const val gson = "2.8.7"
+    const val okhttp = "3.14.9"
+
+    //Retrofit
+    const val room_version = "2.3.0"
 }
 
 object Dependencies {
@@ -78,4 +87,15 @@ object Dependencies {
 
     //Rule
     const val core_testing = "androidx.arch.core:core-testing:${Versions.core_testing}"
+
+    //Retrofit
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val converter_gson = "com.squareup.retrofit2:converter-gson:${Versions.converter_gson}"
+    const val gson = "com.google.code.gson:gson:${Versions.gson}"
+    const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp}"
+
+    //Retrofit
+    const val room_runtime = "androidx.room:room-runtime:${Versions.room_version}"
+    const val room_compiler = "androidx.room:room-compiler:${Versions.room_version}"
+    const val room_ktx = "androidx.room:room-ktx:${Versions.room_version}"
 }

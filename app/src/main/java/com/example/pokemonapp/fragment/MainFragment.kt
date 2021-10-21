@@ -20,11 +20,11 @@ class MainFragment : Fragment() {
         binding = FragmentMainBinding.inflate(inflater, container, false)
         binding.viewPagerMainFragment.adapter =
             ViewPagerAdapter(listOf(CardTypeFragment(), CardSubTypeFragment(), CardSuperTypeFragment()), parentFragmentManager, lifecycle)
-        attachFragmnents(binding.tabLayoutMainFragment, binding.viewPagerMainFragment)
+        attachFragments(binding.tabLayoutMainFragment, binding.viewPagerMainFragment)
         return binding.root
     }
 
-    private fun attachFragmnents(tabLayout: TabLayout, viewPager: ViewPager2) {
+    private fun attachFragments(tabLayout: TabLayout, viewPager: ViewPager2) {
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             when (position) {
                 TYPES_TAB -> {

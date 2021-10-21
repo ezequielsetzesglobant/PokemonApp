@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'kotlin'
+    id 'kotlin-kapt'
 }
 
 java {
@@ -13,3 +14,14 @@ compileKotlin {
         freeCompilerArgs = ["-XXLanguage:+InlineClasses"]
     }
 }.dependsOn ktlint
+
+dependencies {
+    //Koin
+    testImplementation Dependencies.koin_test
+    implementation Dependencies.koin_androidx_viewmodel
+
+    //Coroutines
+    implementation Dependencies.kotlinx_coroutines_core
+    implementation Dependencies.kotlinx_coroutines_android
+    testImplementation Dependencies.kotlinx_coroutines_test
+}

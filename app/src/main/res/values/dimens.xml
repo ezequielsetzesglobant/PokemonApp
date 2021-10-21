@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="view_pager_main_fragment_height">0dp</dimen>
+    <dimen name="progress_bar_splash_screen_fragment_width">125dp</dimen>
+    <dimen name="progress_bar_splash_screen_fragment_height">125dp</dimen>
+
+    <dimen name="recycler_view_card_type_fragment_margin">10dp</dimen>
+    <dimen name="progress_bar_card_type_fragment_width">125dp</dimen>
+    <dimen name="progress_bar_card_type_fragment_height">125dp</dimen>
+
+    <dimen name="card_view_item_recycler_view_card_type_fragment_margin_bottom">5dp</dimen>
+    <dimen name="image_view_item_recycler_view_card_type_fragment_width">100dp</dimen>
+    <dimen name="image_view_item_recycler_card_type_fragment_view_height">100dp</dimen>
+    <dimen name="text_view_item_recycler_view_card_type_fragment_size">30sp</dimen>
 </resources>
